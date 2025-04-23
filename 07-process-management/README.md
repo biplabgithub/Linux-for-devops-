@@ -21,6 +21,7 @@ A process is an instance of a running program. Linux provides multiple utilities
 - `kill -CONT PID` – Resume a stopped process
 - `renice -n 10 -p PID` – Lower priority of a process
 - `renice -n -5 -p PID` – Increase priority of a process (requires root)
+- 'kill -15 PID' - for kill the process (it gives the process a chance to clean up resources (close files, save work)) 
 
 ### Background & Foreground Processes
 - `command &` – Run a command in the background
