@@ -52,7 +52,13 @@ passwd username
 - **Unlock a user account**
   ```bash
   passwd -u username
-  ```
+ ```
+- **managing the password**
+  '''bash
+ chage -M username | where M=set the maximum date
+ chage -d username | d= forcefully passwd changes
+ chage -l username  | l= view currents passwd
+ chage -W username  | w= warning before passwd expiry'''
 
 ## Modifying Users
 Modify an existing user with `usermod`:
